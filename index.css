@@ -1,0 +1,58 @@
+@font-face {
+	src: url(8bitoperator.ttf);
+	font-family: eight-bit;
+}
+c-console * {
+	font-family: Monospace;
+}
+* :not(c-console, c-console *) {
+	font-family: /*eight-bit,*/Sans-Serif;
+}
+@keyframes lightback{
+	from {
+		background-color: #ffffff;
+	}
+	to {
+		background-color: #d1d5ea;
+	}
+}
+body {
+	display: flex;
+	flex-direction: column;
+	animation: lightback 3s infinite alternate running;
+	width: 98vw;
+	margin: 0;
+	padding: 1% 1% 1% 1%;
+}
+body > div {
+	border: 1px solid #9AA9C0;
+}
+div.span {
+	display: flex;
+	padding: 0.5% 0;
+	justify-content: stretch;
+	align-items: center;
+}
+div.span > * {
+	margin-right: 0.5%;
+}
+div.span > *:not(input, label) {
+	flex-grow: 1;
+}
+div.note-list-item {
+	width: 100%;
+	display: flex;
+	justify-content: stretch;
+	margin: 0.5ch 0;
+	margin-bottom: solid grey;
+}
+.note-list-item-title {
+	font-weight: bold;
+}
+#debug-div {
+	display: none;
+}
+footer {
+	position: absolute;
+	bottom: 1%;
+}

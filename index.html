@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<script src="js/firebase_initialise.js" module type="module"></script>
+	<script src="js/firebase.js"></script>
+	<script src="js/notes.js"></script>
+	<script src="js/intent.js"></script>
+	<script src="js/day.min.js"></script>
+	<script src="./index.js"></script>
+	<title>Home - MJNotepad</title>
+</head>
+<body>
+	<h1 style="font-size: 250%; text-align: center; margin-top: 0; border: none;"><div style="display: inline; color: #0000FF; font-weight: 1000">MJ</div><div style="display: inline; color: #ff6700; font-weight: 300">Note<div style="display: inline; color: #ff0000; font-weight: 100;">pad</div></div></h1>
+	<button id="new-note">New note</button>
+	<div id="note-container">
+		<label for="note-container">no notes yet</label>
+	</div>
+	<div id="debug-div">
+		<label for="debug-div">Debug tools</label>
+		<button onclick="Notes.debugPopulate(); location.reload();">Populate</button>
+		<button onclick="Notes.debugClear(); location.reload()">Clear notes</button>
+	</div>
+	<footer>
+		Mateo J.
+	</footer>
+</body>
+</html>
