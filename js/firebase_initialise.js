@@ -12,8 +12,8 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, Go
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 Firebase.config = {
-  apiKey: "AIzaSyC1SExEbhjeamHwysEOF108N2WhaPoRUPI",
-  authDomain: "mjnotes-b35a6.firebaseapp.com",
+  apiKey: "[SECRET]",
+  authDomain: "[SECRET]",
   databaseURL: "https://mjnotes-b35a6-default-rtdb.firebaseio.com",
   projectId: "mjnotes-b35a6",
   storageBucket: "mjnotes-b35a6.appspot.com",
