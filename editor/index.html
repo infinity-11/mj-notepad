@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/editor.css">
+	<script src="js/notes.js"></script>
+	<script src="js/intent.js"></script>
+	<script src="js/editor.js"></script>
+	<script src="js/day.min.js"></script>
+	<title>Edit note</title>
+</head>
+<body>
+	<div class="span">
+		<label for="title-input">Title: </label><input id="title-input" type="text" placeholder="Title for your note">
+		<span id="type-select" style="text-align: right; margin: 0 0% 0 0; padding: 0;" value="Text">Text</span>
+	</div>
+	<textarea id="text-note-textarea" title="Main text editing area" ondblclick="debug_generateText()" placeholder="Your note here"></textarea>
+	<div id="checklist-div">
+		<button id="add-checklist-item">Add item</button>
+	</div>
+	<button id="save-button" type="submit">Save</button>
+</body>
+</html>
